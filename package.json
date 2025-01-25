@@ -1,0 +1,26 @@
+{
+  "name": "hoomla-webservice",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChandraMP-Akasa/hoomla-webservice.git"
+  },
+  "author": "Chandra M Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChandraMP-Akasa/hoomla-webservice/issues"
+  },
+  "homepage": "https://github.com/ChandraMP-Akasa/hoomla-webservice#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mysql2": "^3.12.0"
+  }
+}
