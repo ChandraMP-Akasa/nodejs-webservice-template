@@ -1,15 +1,15 @@
 import mysql from 'mysql2';
+import config from './envconfig.js'; // Import your dynamic env configuration
 
-// Create a pool of database connections for better performance and reuse
+// Create a pool of database connections based on the current environment
 const db = mysql.createPool({
-  host: 'localhost',         // your database host
-  user: 'root',              // your database username
-  password: 'your_password', // your database password
-  database: 'your_db_name',  // your database name
-  waitForConnections: true,  // Wait for connections if pool is busy
-  connectionLimit: 10,       // Max number of simultaneous connections
-  queueLimit: 0              // Max number of queued connection requests
+  host: config.db.host,         
+  user: config.db.user,         
+  password: config.db.password, 
+  database: config.db.database,
+  waitForConnections: true,     
+  connectionLimit: 10,          
+  queueLimit: 0                
 });
 
-// Export the pool so it can be used across the application
 export default db;
